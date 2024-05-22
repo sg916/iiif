@@ -2,7 +2,7 @@
   "@context": "http://iiif.io/api/presentation/2/context.json",
   "@id": "http://tuoserver.com/manifest.json",
   "@type": "sc:Manifest",
-  "label": "Manifesto IIIF delle tue Immagini",
+  "label": "Manifesto IIIF con Video YouTube",
   "sequences": [
     {
       "@type": "sc:Sequence",
@@ -10,21 +10,12 @@
         {
           "@id": "http://tuoserver.com/canvas/p1",
           "@type": "sc:Canvas",
-          "label": "Immagine 1",
-          "width": 600,
-          "height": 400,
-          "images": [
+          "label": "Video YouTube",
+          "otherContent": [
             {
+              "@id": "https://youtu.be/17Ak4MGYMvw?si=LykV7_XJAWVJeQ7j",
               "@type": "oa:Annotation",
-              "motivation": "sc:painting",
-              "resource": {
-                "@id": "https://drive.google.com/file/d/1gTqRkcxhySaNXhnyZvcJETiDJeT9JZVi/view?usp=sharing",
-                "@type": "dctypes:Image",
-                "format": "image/jpeg",
-                "width": 600,
-                "height": 400
-              },
-              "on": "http://tuoserver.com/canvas/p1"
+              "motivation": "sc:painting"
             }
           ]
         }
